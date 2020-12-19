@@ -50,6 +50,10 @@ app.use('/:current', (req, res) => {
   res.sendFile(path.join(__dirname, '/client/index.html'));
 })
 
+
+
+
+
 app.listen(port, () => {
   console.log(`Proxy server listening on http://localhost:${port}!`)
 })
