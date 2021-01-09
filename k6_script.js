@@ -18,8 +18,11 @@ export let options = {
       
   },
   stages: [
-    { duration: '120s', target: 1 },
-   
+    { duration: '30s', target: 1 },
+    { duration: '30s', target: 100 },
+    { duration: '30s', target: 1000 },
+    { duration: '30s', target: 10 },
+
   ],
 
 };
