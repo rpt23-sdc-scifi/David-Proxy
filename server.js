@@ -10,9 +10,15 @@ app.use(express.static('client'))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-
+//Mongo Original Database
 app.use('/songdata/', createProxyMiddleware({
   target: 'http://localhost:3005/',
+  changeOrigin: true
+}));
+
+//PSQL Database
+app.use('/song/', createProxyMiddleware({
+  target: 'http://localhost:3005/api/',
   changeOrigin: true
 }));
 
