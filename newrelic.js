@@ -9,7 +9,7 @@ exports.config = {
   /**
    * Array of application names.
    */
-  app_name: ['David-Proxy'],
+  app_name: ['Proxy-EC2'],
   /**
    * Your New Relic license key.
    */

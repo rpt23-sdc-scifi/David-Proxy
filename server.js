@@ -13,13 +13,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //Mongo Original Database
 app.use('/songdata/', createProxyMiddleware({
-  target: 'http://18.144.15.249/',
+  target: 'http://localhost:3005/',
   changeOrigin: true
 }));
 
 //PSQL Database
-app.use('/song/', createProxyMiddleware({
-  target: 'http://18.144.15.249/api/',
+app.use('/api/song/', createProxyMiddleware({
+  target: 'http://localhost:3005/',
   changeOrigin: true
 }));
 
