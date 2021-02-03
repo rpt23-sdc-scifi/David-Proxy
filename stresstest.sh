@@ -6,3 +6,4 @@ if [ $? -ne 0 ]; then
   mail -s "🚨 Failed performance test on proxy" dkc.ushift@mail.com <<< "${currentDate} - My performance test"
   exit 1
 fi
+# k6 cloud k6_io.js
