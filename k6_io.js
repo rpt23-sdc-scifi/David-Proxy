@@ -16,6 +16,8 @@ export let options = {
     { duration: '30s', target: 0 }, 
   ],
   ext: {
+    projectID: 3524262,
+    name: "Proxy",
     loadimpact: {
       distribution: {
         "amazon:us:ashburn": { loadZone: "amazon:us:ashburn", percent: 100 },
