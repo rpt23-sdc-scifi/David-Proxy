@@ -7,6 +7,7 @@ import { sleep } from 'k6';
 let errorRate = new Rate ('errorRate');
 
 export let options = {
+vusMax: 200,
   stages: [
     { duration: '15s', target: 5 },
     { duration: '15s', target: 10 },
